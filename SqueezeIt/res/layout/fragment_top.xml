@@ -77,9 +77,5 @@
                 android:text="I" />
             
         </LinearLayout>
-    </HorizontalScrollView>
-    
-    <TextView android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:text="Alpha pane Alpha pane Alpha pane" /> 
+    </HorizontalScrollView> 
  </LinearLayout>

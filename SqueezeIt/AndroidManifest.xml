@@ -24,11 +24,11 @@
             </intent-filter>
         </activity>
          <activity
-            android:label="Track Activity"
+            android:label="Tracks"
             android:name=".TrackActivity" >
         </activity>
          <activity
-            android:label="Playback Activity"
+            android:label="Playback"
             android:name=".PlaybackActivity" >
         </activity>        
     </application>
