@@ -1,0 +1,66 @@
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <!-- The main content view -->
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	    xmlns:tools="http://schemas.android.com/tools" 
+	    android:id="@+id/LinearLayout1" 
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent" 
+	    android:animateLayoutChanges="true" 
+	    android:baselineAligned="false" 
+	    android:orientation="vertical" 
+	    tools:context=".MainActivity" > 
+ 	    
+	    <fragment android:id="@+id/alpha" 
+	        android:layout_width="match_parent" 
+	        android:layout_height="50dp" 
+	        class="com.example.squeezeit.TopFragment" /> 
+
+	    <fragment
+	        android:id="@+id/omega"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        class="com.example.squeezeit.BottomFragment"/>
+	         
+	 </LinearLayout>
+
+    
+    <!--
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/albumListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.37" >
+        </ListView>
+    </LinearLayout>
+    -->
+    
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#666"
+        android:dividerHeight="1dp"
+        android:background="#333"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        />
+ 
+</android.support.v4.widget.DrawerLayout>
